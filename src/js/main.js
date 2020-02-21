@@ -17,11 +17,9 @@ $(document).ready(() => {
     }
   }
 
-  showTabs();
+  window.matchMedia('(min-width: 481px)').addListener(showTabs);
 
-  $(window).on('resize', () => {
-    showTabs();
-  });
+  showTabs();
 //tabs
   $(`${tab}, .choose__circle`).on('click', function () {
     const idx = $(this).index();

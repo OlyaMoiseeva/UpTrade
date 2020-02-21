@@ -17,17 +17,15 @@ $(document).ready(() => {
     }
   }
 
-  showTabs();
+  window.matchMedia('(min-width: 481px)').addListener(showTabs);
 
-  $(window).on('resize', () => {
-    showTabs();
-  });
+  showTabs();
 //tabs
   $(`${tab}, .choose__circle`).on('click', function () {
     const idx = $(this).index();
     $('.tabs__tab-content').hide();
     const activeTab = $(this).attr('rel');
-    $(`#${activeTab}`).fadeIn();
+    $(`#${activeTab}`).fadeIn(0);
     $(tab)
       .removeClass('tabs-box__link_active')
       .eq(idx)

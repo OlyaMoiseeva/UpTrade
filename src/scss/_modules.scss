@@ -1,0 +1,32 @@
+$primary-color: #00b596;
+$text-color: #1c1c1c;
+$des-text-color: #565656;
+$lines-color: #c5c5c2;
+$bg-color: #f3f2da;
+
+$primary-font: 'pf_dintext_prolight';
+$secondary-font: 'pf_dintext_proregular';
+
+
+@font-face {
+    font-family: 'pf_dintext_prolight';
+    src: url('../../src/fonts/pfdintextpro_light-webfont.woff2') format('woff2'),
+         url('../../src/fonts/pfdintextpro_light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'pf_dintext_proregular';
+    src: url('../../src/fonts/pfdintextpro_regular-webfont.woff2') format('woff2'),
+         url('../../src/fonts/pfdintextpro_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@mixin flex {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}

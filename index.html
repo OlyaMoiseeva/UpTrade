@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>UpTrader</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="dist/css/main.css">
+</head>
+<body>
+  <div class="choose">
+    <div class="container">
+      <h1 class="choose__title">Выберите способ зароботка</h1>
+      <div class="choose__box">
+        <a href="#tab" class="choose__circle" rel="tab1">
+          <img class="choose__icon" alt="" src="src/images/icon_1.png">
+          <div class="choose__text">Продавать</div>
+        </a>
+        <a href="#tab" class="choose__circle" rel="tab2">
+          <img class="choose__icon" alt="" src="src/images/icon_2.png">
+          <div class="choose__text">Инвестировать</div>
+        </a>
+        <a href="#tab" class="choose__circle" rel="tab3">
+          <img class="choose__icon" alt="" src="src/images/icon_3.png">
+          <div class="choose__text">Привлекать клиентов</div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- tabs -->
+  <div id="tab" class="tabs">
+    <div class="container">
+      <ul class="tabs-box">
+          <li class="tabs-box__link tabs-box__link_active" rel="tab1">Продавать</li>
+          <li class="tabs-box__link" rel="tab2">Инвестировать</li>
+          <li class="tabs-box__link" rel="tab3">Привлекать клиентов</li>
+      </ul>
+      <div class="tabs__container">
+        <h3 class="tabs__accordion tabs__accordion_1" rel="tab1">Самостоятельно торговать</h3>
+        <div id="tab1" class="tabs__tab-content">
+          <p class="tabs__description">Если вы ищете пассивный доход и предпочитаете, чтобы деньги для вас зарабатывал тот, кто умеет это делать, тогда попробуйте ЛАММ. ЛАММ – это сервис копирования сделок успешных трейдеров. Доходность ни чем не ограничена!</p>
+          <p class="tabs__list-title">Как это работает</p>
+          <ul class="list">
+            <li class="list__link"><span class="list__num">1</span>Вы выбираете управляющего из рейтинга по фильтру Options</li>
+            <li class="list__link"><span class="list__num">2</span>Подключаете свой счет к счету Управляющего</li>
+            <li class="list__link"><span class="list__num">3</span>На вашем счете начинается копирование сделок</li>
+            <li class="list__link"><span class="list__num">4</span>Обратите внимание, что вы не перечисляете свои деньги Управляющему. Все ваши средства остаются на Вашем счете.</li>
+            <li class="list__link"><span class="list__num">5</span>Вы можете подключиться к нескольким Управляющим одновременно.</li>
+            <li class="list__link"><span class="list__num">6</span>Вы можете отключиться от Управляющих в любой момент.</li>
+          </ul>
+          <input class="list__but" type="button" name="" value="Продолжить">
+        </div>
+        <h3 class="tabs__accordion tabs__accordion_2" rel="tab2">Инвестировать</h3>
+        <div id="tab2" class="tabs__tab-content">
+          <p class="tabs__description">Если вы ищете пассивный доход и предпочитаете, чтобы деньги для вас зарабатывал тот, кто умеет это делать, тогда попробуйте ЛАММ. ЛАММ – это сервис копирования сделок успешных трейдеров. Доходность ни чем не ограничена!</p>
+          <p class="tabs__list-title">Как это работает</p>
+          <ul class="list">
+            <li class="list__link"><span class="list__num">1</span>Вы выбираете управляющего из рейтинга по фильтру Options</li>
+            <li class="list__link"><span class="list__num">2</span>Подключаете свой счет к счету Управляющего</li>
+            <li class="list__link"><span class="list__num">3</span>На вашем счете начинается копирование сделок</li>
+          </ul>
+          <input class="list__but" type="button" name="" value="Продолжить">
+        </div>
+        <h3 class="tabs__accordion tabs__accordion_3" rel="tab3">Привлекать клиентов</h3>
+        <div id="tab3" class="tabs__tab-content">
+          <p class="tabs__description">Если вы ищете пассивный доход и предпочитаете, чтобы деньги для вас зарабатывал тот, кто умеет это делать, тогда попробуйте ЛАММ. ЛАММ – это сервис копирования сделок успешных трейдеров. Доходность ни чем не ограничена!</p>
+          <p class="tabs__list-title">Как это работает</p>
+          <ul class="list">
+            <li class="list__link"><span class="list__num">1</span>Вы выбираете управляющего из рейтинга по фильтру Options</li>
+            <li class="list__link"><span class="list__num">2</span>Подключаете свой счет к счету Управляющего</li>
+            <li class="list__link"><span class="list__num">3</span>На вашем счете начинается копирование сделок</li>
+            <li class="list__link"><span class="list__num">4</span>Обратите внимание, что вы не перечисляете свои деньги Управляющему. Все ваши средства остаются на Вашем счете.</li>
+            <li class="list__link"><span class="list__num">5</span>Вы можете подключиться к нескольким Управляющим одновременно.</li>
+            <li class="list__link"><span class="list__num">6</span>Вы можете отключиться от Управляющих в любой момент.</li>
+          </ul>
+          <input class="list__but" type="button" name="" value="Продолжить">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- tabs end -->
+  <div class="type"></div>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="dist/js/main-min.js"></script>
+</body>
+</html>

@@ -1,0 +1,204 @@
+@media screen and (max-width: 1250px) {
+  body .container {
+    padding: 0 20px;
+  }
+  body .choose {
+    padding-top: 200px;
+    .choose__box .choose__circle {
+      width: 300px;
+      height: 300px;
+      &:after {
+        width: 286px;
+        height: 286px;
+      }
+      .choose__text {
+        margin-top: 180px;
+      }
+      .choose__icon {
+        bottom: 155px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 950px) {
+  body .choose .choose__box {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    .choose__circle {
+      width: 270px;
+      height: 270px;
+      &:after {
+        width: 252px;
+        height: 252px;
+      }
+      .choose__text {
+        margin-top: 160px;
+        font-size: 18px;
+      }
+      .choose__icon {
+        bottom: 140px;
+      }
+    }
+  }
+  body .tabs .tabs-box .tabs-box__link {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 600px) {
+  body .choose {
+    padding-top: 100px;
+    .choose__box .choose__circle {
+      width: 240px;
+      height: 240px;
+      margin-bottom: 10px;
+      &:after {
+        width: 222px;
+        height: 222px;
+      }
+      .choose__text {
+        margin-top: 140px;
+        font-size: 18px;
+      }
+      .choose__icon {
+        bottom: 120px;
+      }
+    }
+  }
+  body .type {
+    min-height: 1200px;
+  }
+  body .tabs__container .tabs__tab-content {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 525px) {
+  body .choose .choose__box {
+    flex-direction: column;
+    align-items: center;
+  }
+  body .choose .choose__title {
+    margin-bottom: 20px;
+    padding: 0 20px;
+  }
+  body .tabs .tabs-box .tabs-box__link {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 480px) {
+  body .container {
+    padding: 0;
+  }
+  body .choose {
+    height: 100vh;
+    padding-top: 45px;
+    .choose__title {
+      font-size: 38px;
+    }
+    .container .choose__box {
+      display: none;
+    }
+  }
+  .tabs {
+    top: 145px;
+    .tabs__container {
+      .tabs__tab-content {
+        width: 100%;
+        position: relative;
+        padding: 20px 20px 300px;
+        box-sizing: border-box;
+        &:after {
+          content: "";
+          position: absolute;
+          background: url(../../src/images/mob_bg.png);
+          width: 100%;
+          height: 270px;
+          background-size: cover;
+          left: 0;
+          bottom: 0;
+        }
+        .list .list__link {
+          height: max-content;
+        }
+      }
+    }
+    .tabs-box {
+      display: none !important;
+    }
+  }
+  body .choose_bg {
+    background: $bg-color;
+  }
+  .tabs_bg {
+    background: $bg-color;
+    height: max-content;
+  }
+  body .type {
+    display: none;
+  }
+  body .tabs__container .tabs__accordion {
+    position: relative;
+    background: rgba(255, 255, 255, .5);
+    width: 90%;
+    height: 68px;
+    line-height: 37px;
+    font-size: 18px;
+    color: $text-color;
+    margin: 0 auto;
+    padding: 14px 0 0 16%;
+    box-sizing: border-box;
+    display: block;
+    cursor: pointer;
+    margin-top: 20px;
+    &_3 {
+      margin-bottom: 20px;
+    }
+    &:after {
+      content: "";
+      position: absolute;
+      height: 8px;
+      width: 8px;
+      display: block;
+      border: 2px solid $lines-color;
+      border-right-width: 0;
+      border-top-width: 0;
+      transform: rotate(-45deg);
+      right: 20px;
+      top: 27px;
+    }
+    &_1:before {
+      content: "";
+      position: absolute;
+      background: url(../../src/images/icon_1.png);
+      background-size: contain;
+      width: 30px;
+      height: 23px;
+      left: 5%;
+      top: 22px;
+    }
+    &_2:before {
+      content: "";
+      position: absolute;
+      background: url(../../src/images/icon_2.png);
+      background-size: contain;
+      width: 30px;
+      height: 25px;
+      left: 5%;
+      top: 20px;
+    }
+    &_3:before {
+      content: "";
+      position: absolute;
+      background: url(../../src/images/icon_3.png);
+      background-size: contain;
+      width: 30px;
+      height: 36px;
+      left: 5%;
+    }
+  }
+  body .tabs__active-arr.tabs__accordion:after {
+    border: 2px solid $lines-color;
+    border-left-width: 0;
+    border-bottom-width: 0;
+    top: 27px
+  }
+}
